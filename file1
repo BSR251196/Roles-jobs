@@ -1,1 +1,21 @@
+[TestMethod]
+public void GetTimeOfDay_At6AM_ReturnsMorning()
+{
+    try
+    {
+        // Setup: change system time to 6 AM
+        ...
 
+        // Arrange phase is empty: testing static method, nothing to initialize
+
+        // Act
+        string timeOfDay = GetTimeOfDay();
+
+        // Assert
+        Assert.AreEqual("Morning", timeOfDay);
+    }
+    finally
+    {
+        // Teardown: roll system time back
+        ...
+    }
